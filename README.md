@@ -1,41 +1,28 @@
-**Overview**
-  
-  • Make a Node.js app that depends on user input from the terminal to retrieve some information from the internet.
-  
-  • Integrate Twitter, Spotify, and OMDb APIs via the appropriate NPM modules to satisfy the requirements that follow.
-  
-  • Use API calls and parse through returned JSON objects, outputting them in a specified format
-  
-  • Read commands and queries from file
+# Node.js API Integration App
 
-**Requirements**
-  
-  • There are 4 main functions that your application must complete:
-      
-      (1) Print latest tweets,
-      (2) Perform a Spotify look-up for a song,
-      (3) Query OMDb for movie details, and
-      (4) Read a query from a text file.
-  
-  • The program should make a request to the Twitter API that is limited by parameters -- username and number of tweets, and it should fetch a JSON object that includes an array of the 20 most recent tweets;
-  
-  • The program should make a request to the Spotify API, and fetch a JSON object that includes the artist(s), song, preview link, and album.
- 
-  • The program should make a HTTP request to the OMDb API using the request NPM module, and get back a JSON object that includes the title, year, IMDb rating, language, etc.
-  
-  • The program should also read from a file called "random.text" and execute the command and query found there using string and array methods. Create any adhoc commands that the application can run from the other three requirements (e.g. Tweets or OMDb data)
-  
-  • Appropriate comments and error-checking must be added
+## Overview
+This project is a Node.js application that interacts with **Twitter**, **Spotify**, and **OMDb** APIs based on user input from the terminal. It processes API calls, retrieves data, and outputs it in a specified format. Additionally, it can read commands and queries from a file to perform various tasks.
 
-**Technologies**
-  
-  
-  • Node.js
-  
-  • JavaScript
-  
-  • OMDb API (via request npm module)
-  
-  • Twitter API (via twitter npm module)
-  
-  • Spotify API (via spotify npm module)
+## Features
+- **Fetch Latest Tweets**: Retrieve the 20 most recent tweets from a specified Twitter account.
+- **Spotify Song Lookup**: Search for a song on Spotify, and display information such as artist, song name, album, and preview link.
+- **OMDb Movie Details**: Query the OMDb API to fetch movie details such as title, year, IMDb rating, language, etc.
+- **Read from File**: Execute commands from a file called `random.txt` and perform API queries based on the file content.
+
+## Requirements
+The application includes the following main functions:
+1. **Print Latest Tweets**:
+   - Fetch the 20 most recent tweets based on a specified Twitter username and number of tweets.
+2. **Spotify Song Lookup**:
+   - Query Spotify API for song details, including the artist(s), song title, preview link, and album.
+3. **OMDb Movie Lookup**:
+   - Fetch movie details such as title, year, IMDb rating, and more from OMDb.
+4. **File Query Execution**:
+   - Read commands from a text file and execute the associated API queries.
+
+## Technologies
+- **Node.js**: JavaScript runtime used for building server-side applications.
+- **JavaScript**: Core programming language used.
+- **Twitter API**: Access Twitter data using the `twitter` NPM module.
+- **Spotify API**: Fetch music data using the `spotify` NPM module.
+- **OMDb API**: Retrieve movie data using the `request` NPM module.
