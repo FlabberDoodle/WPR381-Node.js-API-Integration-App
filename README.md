@@ -26,3 +26,5 @@ The application includes the following main functions:
 - **Twitter API**: Access Twitter data using the `twitter` NPM module.
 - **Spotify API**: Fetch music data using the `spotify` NPM module.
 - **OMDb API**: Retrieve movie data using the `request` NPM module.
+
+![Spotify App](https://github.com/user-attachments/assets/88feb40f-72d2-401c-a616-96fa66b10616)
